@@ -1,0 +1,27 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+    # Unwanted request methods that is not useful
+    RewriteCond %{REQUEST_METHOD} ^(head|trace|track) [NC]
+    RewriteRule ^ - [F,L]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # RewriteCond %{REQUEST_FILENAME} -d [OR]
+    # RewriteCond %{REQUEST_URI} =/ [OR]
+    # RewriteCond %{REQUEST_URI} =/index.php [OR]
+    # RewriteCond %{REQUEST_URI} =""
+    # RewriteRule ^ index.php [L]
+
+    # Translate the request
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>
