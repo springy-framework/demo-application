@@ -47,21 +47,21 @@ return [
         /*
          * The root path of the view templates.
          */
-        'templates' => __DIR__.'/../app/Views',
+        'templates' => __DIR__ . '/../app/Views',
 
         /*
          * The path for compiled template directory.
          */
-        'compiled' => __DIR__.'/../var/compiled',
+        'compiled' => __DIR__ . '/../var/compiled',
 
         /*
          * The path to cache directory.
          */
-        'cache' => __DIR__.'/../var/cache',
+        'cache' => __DIR__ . '/../var/cache',
 
         /*
          * Path to view templates of the HTTP error pages.
          */
-        'errors' => __DIR__.'/../app/Views/Errors',
+        'errors' => __DIR__ . '/../app/Views/Errors',
     ],
 ];

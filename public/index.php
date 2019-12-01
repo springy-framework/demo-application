@@ -9,7 +9,7 @@
 $startTime = microtime(true);
 
 // Loads the Composer autoload
-require __DIR__.'/../vendor/autoload.php';
+require __DIR__ . '/../vendor/autoload.php';
 
-Springy\HTTP\Kernel::getInstance(__DIR__.'/../conf/main.php')
+Springy\HTTP\Kernel::getInstance(__DIR__ . '/../conf/main.php')
     ->run($startTime)->send();

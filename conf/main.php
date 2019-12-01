@@ -86,7 +86,7 @@ return [
      *
      * @var string
      */
-    'errors_log' => __DIR__.'/../var/log/errors',
+    'errors_log' => __DIR__  . '/../var/log/errors',
 
     /*
      * The webmaster email to report about application errors.

@@ -11,7 +11,7 @@ return [
      *
      * Default: 'app/Stuctures'
      */
-    'model_structures' => __DIR__.'/../app/Structures',
+    'model_structures' => __DIR__ . '/../app/Structures',
 
     /*
      * Connections.
@@ -50,7 +50,7 @@ return [
              * Migration scripts directory.
              */
             'migration' => [
-                'dir' => __DIR__.'/../migrations/mysql',
+                'dir' => __DIR__ . '/../migrations/mysql',
                 'namespace' => 'App',
             ],
         ],
