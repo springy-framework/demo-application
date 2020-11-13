@@ -6,7 +6,7 @@ This project is a demonstration application made with Springy Framework.
 
 ## Requirements
 
--   PHP 7.1.3+
+-   PHP 7.2+
 -   [Composer](https://getcomposer.org/) Dependency Manager for PHP
 
 ## Language dependencies
