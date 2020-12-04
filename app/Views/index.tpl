@@ -13,8 +13,10 @@
         <div class="list-group">
             <a href="/hyphenated-link" class="list-group-item list-group-item-action">Hyphenated link page</a>
             <a href="/hyphenated-link/another" class="list-group-item list-group-item-action">Hyphenated link page with endpoint</a>
-            <a href="/hyphen-separated" class="list-group-item list-group-item-action">Another hyphenated link page</a>
-            <a href="/underscored_Link" class="list-group-item list-group-item-action">Underscored link page</a>
+            <a href="/underscored_link" class="list-group-item list-group-item-action">Underscored link page</a>
+            <a href="/other/test" class="list-group-item list-group-item-action">Controllers in subdirectories</a>
+            <a href="/sample" class="list-group-item list-group-item-action">Index in subdirectories</a>
+            <a href="/sample/endpoint" class="list-group-item list-group-item-action">Endpoint in subdirectories index</a>
         </div>
     </div>
 
@@ -33,7 +35,9 @@
         <div class="list-group">
             <a href="/bad-request" class="list-group-item list-group-item-action">400 Bad Request</a>
             <a href="/forbidden" class="list-group-item list-group-item-action">403 Forbidden</a>
-            <a href="/notfound" class="list-group-item list-group-item-action">404 Page Not Found</a>
+            <a href="/notfound" class="list-group-item list-group-item-action">
+                404 Page Not Found <small>(with custom error template)</small>
+            </a>
             <a href="/im-a-teapot" class="list-group-item list-group-item-action">418 I'm a Teapot</a>
             <a href="/internal-error" class="list-group-item list-group-item-action">500 Internal Server Error</a>
             <a href="/error503" class="list-group-item list-group-item-action">503 Service Unavailable</a>

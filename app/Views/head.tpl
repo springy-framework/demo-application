@@ -12,7 +12,7 @@
 
     <style>
         main > .container {
-            padding: 60px 15px 0;
+            padding: 60px 15px 15px;
         }
 
         .footer {
