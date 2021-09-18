@@ -10,13 +10,12 @@
 
 namespace App\Extensions;
 
-use Springy\Security\AclUserInterface;
 use Springy\Security\IdentityInterface;
 
 /**
  * User class.
  */
-class User implements IdentityInterface, AclUserInterface
+class User implements IdentityInterface
 {
     public $uid;
     public $name;
