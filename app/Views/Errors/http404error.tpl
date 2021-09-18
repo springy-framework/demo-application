@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
@@ -6,6 +7,7 @@
             body {
                 background-image: linear-gradient(to bottom right, rgb(75, 145, 218), rgb(0, 5, 6));
                 font-family: 'Ubuntu Mono', monospace;
+                margin: 0;
             }
 
             .back {
@@ -17,6 +19,10 @@
                 left: 0;
                 overflow: hidden;
             }
+            .back::after {
+                flex-basis: 0;
+                order: 1;
+            }
             .back > p {
                 margin: auto;
                 color: #24394a;
@@ -24,6 +30,10 @@
                 font-size: 200px;
                 font-weight: 900;
                 font-family: 'Montserrat', sans-serif;
+            }
+
+            .clearflex {
+                height: 100vh;
             }
 
             .message {
@@ -91,5 +101,6 @@
                 </div>
             </div>
         </div>
+        <div class="clearflex"></div>
     </body>
 </html>
