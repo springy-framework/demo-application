@@ -13,6 +13,7 @@
 namespace App\Controllers\Api;
 
 use Springy\HTTP\Controller;
+use Springy\HTTP\Request;
 use Springy\Utils\JSON;
 
 class JsonResponse extends Controller
@@ -24,7 +25,8 @@ class JsonResponse extends Controller
 
         $json = new JSON();
         $json->setData([
-            "Speeks" => [
+            'Request' => Request::getInstance()->getMethod(),
+            'Speeks' => [
                 'Homer' => 'Duh!',
                 'Nelson' => 'Ha ha!',
                 'Maggie' => 'Chup chup!',

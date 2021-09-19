@@ -4,9 +4,10 @@
 $startTime = microtime(true);
 
 // Loads the Composer autoload
-require __DIR__.'/vendor/autoload.php';
+require __DIR__ . '/vendor/autoload.php';
 
-$status = Springy\Console\Kernel::getInstance(__DIR__.'/conf/main.php')
-    ->run($startTime)->getExitStatus();
+$kernel = Springy\Core\Kernel::getInstance(__DIR__ . '/conf/main.php');
+$app = Springy\Console\System::getInstance();
+$kernel->run($app, $startTime);
 
-exit($status);
+exit($app->getExitStatus());

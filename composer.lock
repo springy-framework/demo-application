@@ -332,12 +332,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/springy-framework/core.git",
-                "reference": "0c987e5dd51cfb91f719b66612f8cb21089315a4"
+                "reference": "e03c988545884dd87a2f12b99d6961a82a341159"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/springy-framework/core/zipball/0c987e5dd51cfb91f719b66612f8cb21089315a4",
-                "reference": "0c987e5dd51cfb91f719b66612f8cb21089315a4",
+                "url": "https://api.github.com/repos/springy-framework/core/zipball/e03c988545884dd87a2f12b99d6961a82a341159",
+                "reference": "e03c988545884dd87a2f12b99d6961a82a341159",
                 "shasum": ""
             },
             "require": {
@@ -400,7 +400,7 @@
                 "issues": "https://github.com/springy-framework/core/issues",
                 "source": "https://github.com/springy-framework/core"
             },
-            "time": "2021-09-18T21:40:57+00:00"
+            "time": "2021-09-19T22:27:54+00:00"
         },
         {
             "name": "symfony/console",
